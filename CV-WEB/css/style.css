@@ -1,65 +1,122 @@
-*{
-    box-sizing: border-box;
-}
-@media screen and (max-width: 700px){
-    nav, .row-1{
-        flex-direction: column;
-    }
-}
-    
-
 body{
+    background-color:rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
-    margin:0;
     padding: 0;
-}
-.row-1{
+    margin: 0;
+    height: 100%;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction:column ;
+
+}
+
+
+/* Comienzo Presentacion */
+
+.flex-presentacion{
+    background-image: url('presentacion.png');
+    height: 100vh;
+}
+
+nav{
+    padding-top: 20px;
+    height: 1vh;
+    display: flex;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+.text-presentacion{
+    color: white;
+    height: 99vh;
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Fin Presentacion */
+
+/* Comienzo Sobre Mi */
+
+.flex-sobremi{
+    background-color: rgb(255, 255, 255);
+    display: flex;
+    height: 100vh;  
+}
+
+.flex-item-right{
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.flex-item-right img{
+    border-radius: 5%;
+}
+
+.flex-item-left{
+    margin-right:25px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: 50%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 .img-perfil{
-    flex: 40%;
-    height: 200px;
+    background-color: #a8a8a8;
 }
 
-header{
-    flex: 60%;
-    padding: 50px;
-    background-color: aquamarine;
+/* Fin Sobre Mi */
+
+/* Comienzo Contacto */
+
+.flex-contacto{
+    background-color: #707070;
+    height: 100vh;
+
+
+    display:flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.redes-sociales{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.redes-sociales img{
+
+    height: 50px;
+
+  
+}
+
+/* Fin Contacto */
+
+
+
+
+h2{
     text-align: center;
+    color: rgb(0, 0, 0);
 }
 
-nav {
+footer{
     display: flex;
     justify-content: center;
-    background-color: #333;
-
-}
-nav a {
-    text-align: center;
-    color: white;
-    padding: 14px 20px;
-    text-decoration: none;
-
+    align-items: center;
+    height: 90px;
+    background-color: #3e3e3e;
 }
 
-.row-2{
-    display: flex;
-    flex-wrap: wrap;
-}
-aside{
-    flex:30px;
-    background-color: beige;
-    padding: 20px;
-}
 
-section{
-    flex: 70%;
-    background-color: khaki;
-    padding: 20px;
-}
-footer{
-    padding: 20px;
-    text-align: center;
-    background-color: blue;
-}
+
+
